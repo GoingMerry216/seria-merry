@@ -1,4 +1,4 @@
-package com.merry216.demo;
+package com.merry216;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

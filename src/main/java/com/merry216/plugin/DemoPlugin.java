@@ -1,4 +1,4 @@
-package com.merry216.demo.plugin;
+package com.merry216.plugin;
 
 import net.lz1998.cq.event.message.CQGroupMessageEvent;
 import net.lz1998.cq.event.message.CQPrivateMessageEvent;

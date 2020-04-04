@@ -7,9 +7,9 @@ spring:
     # 如果前一个功能返回MESSAGE_BLOCK，下一个功能不会被执行
     # 如果前一个功能返回MESSAGE_IGNORE，会继续执行下一个功能
     plugin-list:
-      - com.merry216.demo.plugin.DemoPlugin
-      - com.merry216.demo.plugin.TestPlugin
-      - com.merry216.demo.plugin.HelloPlugin
+      - com.merry216.plugin.DemoPlugin
+      - com.merry216.plugin.TestPlugin
+      - com.merry216.plugin.HelloPlugin
 
     # 下面配置event线程池，也可以删掉用默认的
     event:
