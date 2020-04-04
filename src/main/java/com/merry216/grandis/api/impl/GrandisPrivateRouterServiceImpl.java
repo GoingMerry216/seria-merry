@@ -17,8 +17,8 @@ public class GrandisPrivateRouterServiceImpl implements IGrandisPrivateRouterSer
     @Override
     public String distributePrivateMsg(long qq, String msg) {
         String trimedMsg = msg.trim();
-        if (trimedMsg.startsWith(".buy ")) {
-            List<String> items = Arrays.asList(trimedMsg.split(" "));
+        if (trimedMsg.startsWith("$")) {
+            List<String> items = Arrays.asList(trimedMsg.split("\\$"));
             String item = items.get(1);
             return tempShopApi.queryItem(item);
         }

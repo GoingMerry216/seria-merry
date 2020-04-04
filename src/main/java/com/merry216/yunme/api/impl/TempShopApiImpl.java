@@ -4,7 +4,9 @@ import com.merry216.yunme.api.ITempShopApi;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
+import org.springframework.stereotype.Service;
 
+@Service("tempShopApi")
 public class TempShopApiImpl implements ITempShopApi {
     /**
      * okhttpclient
@@ -14,7 +16,7 @@ public class TempShopApiImpl implements ITempShopApi {
 
     @Override
     public String queryItem(String key) {
-        String baseUrl = "http://localhost:8091/";
+        String baseUrl = "http://127.0.0.1:8091/api/v1.0/products";
         StringBuffer buffer = new StringBuffer("?s=" + key);
         Request request = new Request.Builder()
                 .url(baseUrl + buffer.toString())

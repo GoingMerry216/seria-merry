@@ -21,7 +21,7 @@ public class DefaultPlugin extends CQPlugin {
     @Override
     public int onPrivateMessage(CoolQ cq, CQPrivateMessageEvent event) {
         long userId = event.getUserId();
-        String replyMsg = "【订阅什么值得买物品】.buy 商品名称";
+        String replyMsg ="1. hi -> hello\n2.$商品名 -> 商品信息";
         cq.sendPrivateMsg(userId, replyMsg, false);
         return MESSAGE_BLOCK;
     }

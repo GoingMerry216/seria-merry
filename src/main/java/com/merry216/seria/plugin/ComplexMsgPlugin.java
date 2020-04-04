@@ -31,10 +31,13 @@ public class ComplexMsgPlugin extends CQPlugin {
             long userId = event.getUserId();
             String msg = event.getMessage().trim();
             String rsp = grandisPrivateRouterService.distributePrivateMsg(userId, msg);
-            cq.sendPrivateMsg(userId, rsp, false);
+            if (rsp != null) {
+                cq.sendPrivateMsg(userId, rsp, false);
+                return MESSAGE_BLOCK;
+            }
         } catch (Exception e) {
             return MESSAGE_IGNORE;
         }
-        return MESSAGE_BLOCK;
+        return MESSAGE_IGNORE;
     }
 }
