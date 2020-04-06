@@ -19,3 +19,6 @@ spring:
       work-queue-size: 512
 
     # 还有一些其他配置可以自己探索
+app:
+  yunme:
+    smzdm: http://127.0.0.1:8091/api/v1.0/products
